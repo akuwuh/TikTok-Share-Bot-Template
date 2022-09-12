@@ -48,7 +48,15 @@ if passwordInput in passwordCollect:
   #MENU START
   time.sleep(1)
   print(Fore.MAGENTA + "[-] "  + Fore.WHITE + "Connecting to servers...")
-
+  
+  #Steps:
+  #Access folder for proxy list and Recaptcha Bypass auth key (in the form of .txt)
+  #Setup 2Captcha connection here (follow steps on their site)
+  #Use Mozilla browser to establish proxy connection before connecting
+  #Connect to zefoy (dot) com
+  #CAptcha will be bypassed
+  
+  
   time.sleep(0.5)
   print(Fore.MAGENTA + "[-] "  + Fore.WHITE + "Enter video Link " + Fore.RED + "(task will fail if invalid): ")
   linkInput = input(Fore.CYAN + "")
@@ -88,6 +96,13 @@ if passwordInput in passwordCollect:
       print()
       print(Fore.MAGENTA + "[-] "  + Fore.GREEN + holder.upper() + "S Selected")
 
+        
+      #Steps:
+      #if 1 => Select Share on zefoy, else 2 => Select Views
+      #Paste linkInput into zefoy
+      #Click Proceed
+      #From here on everything should be done (can be repeated w/ new proxies)
+      
       time.sleep(1.7)
 
       print(CURSOR_UP_ONE + ERASE_LINE + CURSOR_UP_ONE)
